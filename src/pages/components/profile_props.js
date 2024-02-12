@@ -1,4 +1,4 @@
-function Avatar({person, size=100}) {
+function Avatar({person, size=100}) { // this function has 1 parameter and {person, size=100} is an object with 2 properties
   return (
     <img
       className="avatar"
