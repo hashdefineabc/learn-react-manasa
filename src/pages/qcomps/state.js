@@ -6,7 +6,10 @@ export default function Gallery() {
   const [showMore, setShowMore] = useState(false);
 
   function handleNextClick() {
-    setIndex(index + 1);
+    // if (index == sculptureList.length)
+    //   setIndex(0)
+    // else
+    setIndex((index + 1) % sculptureList.length);
   }
 
   function handleMoreClick() {
