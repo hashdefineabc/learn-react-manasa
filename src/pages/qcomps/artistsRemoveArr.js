@@ -20,6 +20,8 @@ export default function List() {
             {artist.name}{' '}
             <button onClick={() => {
               artists.splice(artist.id, 1)
+              //artists.splice(artist.id, 1)
+              setArtists(artists.splice(artist.id, 1));
             }}>
               Delete
             </button>

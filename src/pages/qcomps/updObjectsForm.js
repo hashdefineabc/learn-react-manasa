@@ -8,7 +8,11 @@ export default function Scoreboard() {
   });
 
   function handlePlusClick() {
-    player.likescore++;
+    setPlayer({
+      ...player,
+      likescore: player.likescore + 1
+    })
+    //player.likescore++;
   }
 
   function handleFirstNameChange(e) {
@@ -20,6 +24,7 @@ export default function Scoreboard() {
 
   function handleLastNameChange(e) {
     setPlayer({
+      ...player,
       lastName: e.target.value
     });
   }
